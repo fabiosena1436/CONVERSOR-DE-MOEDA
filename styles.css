@@ -44,7 +44,7 @@ label {
     font-size: 14px;
     line-height: 18px;
     color: #BBBBBB;
-    margin-bottom: 24px;
+    margin: 24px;
 }
 
 select, input {

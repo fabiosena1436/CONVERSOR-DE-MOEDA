@@ -14,6 +14,7 @@ function convetValues() {
 
     const dolarToday = 4.92
     const euroToday = 5.36
+    const bitcoinToday = 214418.11
 
 
 
@@ -29,6 +30,13 @@ function convetValues() {
             style: "currency",
             currency: "EUR"
         }).format(inputCurrencyValue / euroToday)
+    }
+
+    if (currencySelect.value == "bitcoin") {
+        currencyValueToConverted.innerHTML = new Intl.NumberFormat("BTC", {
+            style: "currency",
+            currency: "BTC"
+        }).format(inputCurrencyValue / bitcoinToday)
     }
 
     currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
@@ -52,9 +60,18 @@ function changeCurrency() {
         currencyName.innerHTML = "Euro"
         currencyImage.src = "assets/euro.png"
     }
+
+    if(currencySelect.value == "bitcoin"){
+        currencyName.innerHTML = "Bitcoin"
+        currencyImage.src = "assets/bitcoin 1.png"
+    }
+
     
     convetValues()
 }
+
+
+
 
 currencySelect.addEventListener("change", changeCurrency)
 convertButton.addEventListener("click", convetValues)
