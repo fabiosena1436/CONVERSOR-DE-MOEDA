@@ -1,7 +1,6 @@
 const convertButton = document.querySelector(".convert-button")
 const currencySelect = document.querySelector(".currency-select")
 
-
 function convetValues() {
     const inputCurrencyValue = document.querySelector(".input-currency").value
     const currencyValueToConvert = document.querySelector(".currency-value-to-convert") //valor real
@@ -15,8 +14,6 @@ function convetValues() {
     const dolarToday = 4.92
     const euroToday = 5.36
     const bitcoinToday = 214418.11
-
-
 
     if (currencySelect.value == "dolar") {
         currencyValueToConverted.innerHTML = new Intl.NumberFormat("en-US", {
@@ -44,7 +41,6 @@ function convetValues() {
         currency: "BRL"
     }).format(inputCurrencyValue)
 
-
 }
 
 function changeCurrency() {
@@ -66,12 +62,8 @@ function changeCurrency() {
         currencyImage.src = "assets/bitcoin 1.png"
     }
 
-    
     convetValues()
 }
-
-
-
 
 currencySelect.addEventListener("change", changeCurrency)
 convertButton.addEventListener("click", convetValues)
