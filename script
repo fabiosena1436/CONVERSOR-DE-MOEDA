@@ -9,7 +9,7 @@ async function convetValues() {
     const currencyValueToConverted = document.querySelector(".currency-value") //outras moedas
 
     const data = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL").then(response => response.json())
-            //   adicionamos o await
+    //   adicionamos o await
     console.log(data)
 
     // if (inputCurrencyValue.trim() === "") {
@@ -44,6 +44,8 @@ async function convetValues() {
         }).format(inputCurrencyValue / bitcoinToday)
     }
 
+
+
     currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency",
         currency: "BRL"
@@ -55,17 +57,17 @@ function changeCurrency() {
     const currencyName = document.getElementById("currency-name")
     const currencyImage = document.querySelector(".currency-img")
 
-    if(currencySelect.value == "dolar"){
+    if (currencySelect.value == "dolar") {
         currencyName.innerHTML = "Dólar Americano"
         currencyImage.src = "assets/usd.png"
     }
 
-    if(currencySelect.value == "euro"){
+    if (currencySelect.value == "euro") {
         currencyName.innerHTML = "Euro"
         currencyImage.src = "assets/euro.png"
     }
 
-    if(currencySelect.value == "bitcoin"){
+    if (currencySelect.value == "bitcoin") {
         currencyName.innerHTML = "Bitcoin"
         currencyImage.src = "assets/bitcoin 1.png"
     }
