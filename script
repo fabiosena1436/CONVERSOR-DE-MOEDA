@@ -12,10 +12,10 @@ async function convetValues() {
             //   adicionamos o await
     console.log(data)
 
-    if (inputCurrencyValue.trim() === "") {
-        alert("Por favor, preencha o valor antes de converter.");
-        return; // Retorna para evitar a execução do restante do código
-    }
+    // if (inputCurrencyValue.trim() === "") {
+    //     alert("Por favor, preencha o valor antes de converter.");
+    //     return; // Retorna para evitar a execução do restante do código
+    // }
 
 
     const dolarToday = data.USDBRL.high
