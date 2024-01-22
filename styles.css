@@ -4,10 +4,21 @@
     box-sizing: border-box;
     font-family: 'Roboto Serif', serif;
     outline: none;
+
 }
 
 body {
     background-color: #FFFFFF;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    height: 100%;
 }
 
 .logo {
@@ -22,12 +33,13 @@ body {
 
 
 
+
+
 main {
 
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 60%;
     margin-top: 587px;
     margin-left: 916px;
     border-radius: 0 0 20px 20px;
@@ -47,7 +59,8 @@ label {
     margin: 24px;
 }
 
-select, input {
+select,
+input {
     width: 200px;
     height: 48px;
     border: 1px solid;
@@ -66,7 +79,7 @@ select, input {
     margin: 0 auto;
 }
 
-#label-meio{
+#label-meio {
     margin: 0 70px;
 }
 
@@ -95,7 +108,7 @@ button {
     margin: 23px 0 23px 0;
     display: block;
     margin: 0 auto 30px;
-    
+
 }
 
 button:hover {
@@ -133,7 +146,8 @@ section {
     color: #777777;
 }
 
-.currency-value, .currency-value-to-convert {
+.currency-value,
+.currency-value-to-convert {
     color: #555555;
     font-weight: 700;
     font-size: 20px;
@@ -147,11 +161,12 @@ section {
         font-family: 'Roboto Serif', serif;
         outline: none;
     }
-    
+
     body {
         background-color: #FFFFFF;
+
     }
-    
+
     .logo {
         width: 375px;
         top: 271px;
@@ -159,26 +174,20 @@ section {
         display: block;
         margin: 20px auto;
         border-radius: 10px 10px 0 0;
-    
+
     }
-    
-    main {
-        width: 375px;
-        margin-top: 587px;
-        margin-left: 916px;
-        border-radius: 0 0 20px 20px;
-        background-color: #F7F7F7;
-        margin: 0 auto 40px;
-        padding: 20px 24px 23px;
+
+    .container{
+        width: 100%;
     }
-    
+
     label {
         width: 700;
         font-size: 14px;
         line-height: 18px;
         color: #BBBBBB;
         margin-bottom: 0px;
-        
+
     }
 
     .header-main {
@@ -186,46 +195,46 @@ section {
         align-items: center;
         flex-direction: column;
     }
-    
 
-    
+
+
     .text-label {
         margin: 15px 0 4px 0;
     }
-    
 
-    
+
+
     section {
-    
+
         border-radius: 20px;
         border: 1px solid;
         padding: 12px;
         display: flex;
         flex-direction: column;
         align-items: center;
-    
+
     }
 
     button {
-margin-top: 15px;
+        margin-top: 15px;
     }
-    
+
     .arrow-img {
         margin: 15px 0;
     }
-    
+
     .moeda {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 4px;
     }
-    
+
     .currency {
         font-size: 14px;
         color: #777777;
     }
-    
+
     .currency-value {
         font-weight: 700;
         font-size: 20px;
